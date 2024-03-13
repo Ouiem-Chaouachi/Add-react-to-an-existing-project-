@@ -1,6 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom"
-
+//React 18. 
+import ReactDOM from "react-dom/client"
 
 
 //only the last instruction will be excecuted , the first hello on the browser is from index.htm file
@@ -32,3 +33,20 @@ ReactDOM.render(
     ,
     document.getElementById("main")
 )
+
+
+const navbar = (
+    <nav>
+        <h1>Bob's Bistro</h1>
+        <ul>
+            <li>Menu</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+)
+//React 18. create root first 
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(navbar)
+//or in one line
+ReactDOM.createRoot(document.getElementById("root")).render(navbar)

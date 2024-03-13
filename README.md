@@ -73,3 +73,19 @@ react-scripts will proceed with creating the necessary configurations. This proc
 
 
 * Compiled successfully!! 🎉
+
+
+# Note
+
+
+ReactDOM.render is not supported in React 18.
+Use <mark> createRoot </mark> instead.
+
+changes are 
+~~~
+import ReactDOM from "react-dom/client"
+
+ReactDOM.createRoot(document.getElementById("root")).render(navbar)
+~~~
+
+
